@@ -1,0 +1,138 @@
+.vertical-nav {
+  display: flex;
+  flex-direction: column;
+  width: 312px;
+  background: #101828;
+  color: #fff;
+  padding: 41px 16px 32px 16px;
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+  }
+
+  &__menu {
+    margin: 1rem 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__menu-item-wrapper {
+    list-style: none;
+  }
+  &__item {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  &__link {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #f2f4f7;
+
+    &:hover {
+      background-color: rgb(255 138 48);
+    }
+  }
+
+  &__dropdown {
+    position: relative;
+  }
+
+  &__dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(255 138 48);
+    }
+  }
+
+  &__chevron {
+    margin-left: 1rem;
+  }
+
+  &__submenu {
+    margin-top: 0.5rem;
+    padding: 0;
+    list-style: none;
+
+    &__item {
+      margin: 100px;
+      text-align: center;
+    }
+  }
+
+  &__bottom {
+    margin-top: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    color: #fff;
+    background-color: transparent;
+
+    &:hover {
+      background-color: rgb(255 138 48);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: blue;
+    }
+  }
+
+  &__user {
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  &__name,
+  &__email {
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  &__name {
+    font-weight: bold;
+    margin-top: 0.25rem;
+  }
+}

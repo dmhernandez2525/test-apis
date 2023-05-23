@@ -1,0 +1,70 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+
+  &__main {
+    width: 100%;
+    padding: 0 32px;
+
+    &__top {
+      margin-top: 26px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__nav-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+
+    color: #101828;
+  }
+
+  &__data-table-input-button-wrapper {
+    display: flex;
+    margin-bottom: 32px;
+    height: 32px;
+    align-items: center;
+    border-bottom: 1px solid #eaecf0;
+  }
+
+  &__data-table-input-button {
+    margin-right: 16px;
+    display: flex;
+    cursor: pointer;
+  }
+  &__data-table-input-button-selected {
+    color: #c45c0d;
+    border-bottom: 2px solid #c45c0d;
+
+    .dashboard__data-input-type {
+      color: #c45c0d;
+    }
+
+    .dashboard__data-input-amount {
+      background: #fdf1e7;
+    }
+  }
+
+  &__data-input-type {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 4px;
+    color: #667085;
+  }
+  &__data-input-amount {
+    width: 30px;
+    height: 22px;
+    margin-bottom: 4px;
+    margin-left: 8px;
+    background: #f2f4f7;
+    border-radius: 16px;
+  }
+}
